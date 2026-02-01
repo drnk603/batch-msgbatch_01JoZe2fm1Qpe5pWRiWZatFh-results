@@ -1,29 +1,68 @@
 <!DOCTYPE html><html lang="nl"><head>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://domain.com/#website",
+      "url": "https://domain.com",
+      "name": "domain"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://domain.com/#org",
+      "name": "domain",
+      "url": "https://domain.com"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://domain.com/thank_you.html",
+      "url": "https://domain.com/thank_you.html",
+      "name": "domain",
+      "isPartOf": {
+        "@id": "https://domain.com/#website"
+      },
+      "inLanguage": "nl"
+    }
+  ]
+}
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
- </head>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="./header-footer.css">
+</head>
  <body>
-  <header class="l-header">
-   <nav class="navbar navbar-expand-lg sticky-top bg-white border-bottom">
-    <div class="container-fluid">
-     <a class="navbar-brand c-logo" href="/">ElektroTech Solutions</a>
-     <button class="navbar-toggler c-nav__toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Navigation umschalten"><span class="navbar-toggler-icon"></span></button>
-     <div class="collapse navbar-collapse c-nav" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-       <li class="nav-item"><a class="nav-link" href="/" aria-current="page">Startseite</a></li>
-       <li class="nav-item"><a class="nav-link" href="about.html">Über uns</a></li>
-       <li class="nav-item"><a class="nav-link" href="services.html">Leistungen</a></li>
-       <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-       <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
-      </ul>
-      <a href="contact.html" class="btn btn-primary ms-lg-3">Angebot anfragen</a>
-     </div>
+  <header class="dr-header" aria-label="Main site header">
+  <div class="dr-header-inner">
+    <div class="dr-header-brand">
+      <div class="dr-header-logo" aria-label="ElektroTech Solutions logo">
+        <span class="dr-header-logo-mark"></span>
+        <span class="dr-header-logo-text">ElektroTech Solutions</span>
+      </div>
     </div>
-   </nav>
-  </header>
+    <nav class="dr-nav" aria-label="Primary navigation">
+      <button class="dr-nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="dr-nav-toggle-bar"></span>
+        <span class="dr-nav-toggle-bar"></span>
+      </button>
+      <ul class="dr-nav-list">
+        <li class="dr-nav-item"><a class="dr-nav-link" href="./index.html">Home</a></li>
+        <li class="dr-nav-item"><a class="dr-nav-link" href="./about.html">About</a></li>
+        <li class="dr-nav-item"><a class="dr-nav-link" href="./contact.html">Contact</a></li>
+        <li class="dr-nav-item"><a class="dr-nav-link" href="./gdpr-rights.html">Gdpr rights</a></li>
+        <li class="dr-nav-item"><a class="dr-nav-link" href="./impressum.html">Impressum</a></li>
+        <li class="dr-nav-item"><a class="dr-nav-link" href="./portfolio.html">Portfolio</a></li>
+        <li class="dr-nav-item"><a class="dr-nav-link" href="./services.html">Services</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
   <main>
    <section class="hero-section py-5 text-center" data-aos="fade-up">
     <div class="container py-md-5">
@@ -47,52 +86,53 @@
     </div>
    </section>
   </main>
-  <footer class="l-footer bg-dark text-white py-4 py-md-5">
-   <div class="container">
-    <div class="row g-4">
-     <div class="col-md-4">
-      <h3 class="h5 fw-bold mb-3">ElektroTech Solutions</h3>
-      <p class="mb-3">Ihr zuverlässiger Partner für professionelle Elektrotechnik in Deutschland.</p>
-      <p class="mb-2"><strong>Adresse:</strong>
-       <br>
-       Alexanderplatz 12
-       <br>
-       10178 Berlin
-       <br>
-       Deutschland</p>
-      <p class="mb-2"><strong>Telefon:</strong> <a href="tel:+493078543210" class="text-white text-decoration-none">+49 30 7854321</a></p>
-      <p><strong>E-Mail:</strong> <a href="mailto:info@domain.com" class="text-white text-decoration-none">info@domain.com</a></p>
-     </div>
-     <div class="col-md-4">
-      <h3 class="h5 fw-bold mb-3">Navigation</h3>
-      <ul class="list-unstyled">
-       <li class="mb-2"><a href="/" class="text-white text-decoration-none">Startseite</a></li>
-       <li class="mb-2"><a href="about.html" class="text-white text-decoration-none">Über uns</a></li>
-       <li class="mb-2"><a href="services.html" class="text-white text-decoration-none">Leistungen</a></li>
-       <li class="mb-2"><a href="portfolio.html" class="text-white text-decoration-none">Portfolio</a></li>
-       <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Kontakt</a></li>
-      </ul>
-     </div>
-     <div class="col-md-4">
-      <h3 class="h5 fw-bold mb-3">Rechtliches</h3>
-      <ul class="list-unstyled">
-       <li class="mb-2"><a href="privacy.html" class="text-white text-decoration-none">Datenschutzerklärung</a></li>
-       <li class="mb-2"><a href="terms_and_conditions.html" class="text-white text-decoration-none">Allgemeine Geschäftsbedingungen</a></li>
-       <li class="mb-2"><a href="terms_of_services.html" class="text-white text-decoration-none">Nutzungsbedingungen</a></li>
-       <li class="mb-2"><a href="cookie_policy.html" class="text-white text-decoration-none">Cookie-Richtlinie</a></li>
-       <li class="mb-2"><a href="gdpr-rights.html" class="text-white text-decoration-none">DSGVO-Rechte</a></li>
-       <li class="mb-2"><a href="impressum.html" class="text-white text-decoration-none">Impressum</a></li>
-      </ul>
-     </div>
+  <footer class="dr-footer" aria-label="Site footer">
+  <div class="dr-footer-inner">
+    <div class="dr-footer-main">
+      <div class="dr-footer-brand-block" aria-label="domain information">
+        <div class="dr-footer-brand-mark"></div>
+        <div class="dr-footer-brand-text">domain</div>
+        <div class="dr-footer-domain">domain.com</div>
+      </div>
+      <div class="dr-footer-nav-block" aria-label="Footer navigation">
+        <h2 class="dr-footer-heading">Navigate</h2>
+        <ul class="dr-footer-nav-list">
+          <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./index.html">Home</a></li>
+          <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./about.html">About</a></li>
+          <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./contact.html">Contact</a></li>
+          <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./gdpr-rights.html">Gdpr rights</a></li>
+          <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./impressum.html">Impressum</a></li>
+          <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./portfolio.html">Portfolio</a></li>
+          <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./services.html">Services</a></li>
+        </ul>
+      </div>
+      <div class="dr-footer-legal-block" aria-label="Legal navigation">
+        <h2 class="dr-footer-heading">Legal</h2>
+        <ul class="dr-footer-legal-list">
+          <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./cookie_policy.html">Cookie Policy</a></li>
+          <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./impressum.html">Impressum</a></li>
+          <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./privacy.html">Privacy</a></li>
+          <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./services.html">Services</a></li>
+          <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./terms_and_conditions.html">Terms And Conditions</a></li>
+          <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./terms_of_services.html">Terms Of Services</a></li>
+        </ul>
+      </div>
     </div>
-    <hr class="my-4 bg-white opacity-25">
-    <div class="row">
-     <div class="col-12 text-center">
-      <p class="mb-0">© 2025 ElektroTech Solutions. Alle Rechte vorbehalten.</p>
-     </div>
+    <div class="dr-footer-bottom">
+      <p class="dr-footer-copy">© <span class="dr-footer-year">2024</span> domain. All rights reserved.</p>
+      <p class="dr-footer-disclaimer">Disclaimer: The information provided on domain.com is for general informational purposes only and does not constitute professional, legal, financial, or technical advice. While domain strives to ensure that all content is accurate and up to date, domain makes no representations or warranties of any kind, express or implied, about the completeness, reliability, suitability, or availability of the information, products, or services on domain.com. Any reliance you place on such information is strictly at your own risk. domain and its owners, employees, or affiliates shall not be liable for any loss or damage, including without limitation indirect or consequential loss or damage, arising from the use of domain.com.</p>
     </div>
-   </div>
-  </footer>
+  </div>
+</footer>
   <script src="script.js" defer=""></script>
  
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+if (typeof AOS !== "undefined" && !window.__AOS_INITIALIZED__) {
+  AOS.init({ once: true, duration: 700, easing: "ease-out-cubic" });
+  window.__AOS_INITIALIZED__ = true;
+}
+</script>
+<script src="./header-footer.js"></script>
+<script src="./consent.js"></script>
 </body></html>
